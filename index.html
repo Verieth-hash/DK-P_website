@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ГК "ДК-П" - Продажи - это мы!</title>
+    <link rel="stylesheet" href="styles-final.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="logo.png" type="image/png" />
+  </head>
+
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <!-- Логотип -->
+          <div class="logo">
+            <img src="logo.png" alt="ГК ДК-П" class="logo-image" width="30"
+              height="30" />
+            ГК "<span style="color: var(--yellow)">ДК-П</span>"
+          </div>
+
+          <!-- Контакты и мобильное меню -->
+          <div class="header-right">
+            <div class="header-contacts">
+              <a href="tel:8 (3532) 20-25-20" class="header-phone"><i
+                  class="fas fa-phone"></i> 8 (3532) 20-25-20</a>
+              <div class="header-socials">
+                <a href="https://t.me/+79058833700" target="_blank"
+                  title="Написать в Telegram"><i
+                    class="fab fa-telegram"></i></a>
+                <a href="https://wa.me/79058833700" target="_blank"
+                  title="Написать в WhatsApp"><i
+                    class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+
+            <!-- Кнопка мобильного меню -->
+            <div class="mobile-menu" id="menuBtn">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+
+          <!-- Мобильная навигация -->
+          <nav class="mobile-nav">
+            <div class="close-nav">
+              <i class="fas fa-times"></i>
+            </div>
+            <ul>
+              <li><a href="#home">Главная</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="#problems">Проблематика</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#cases">Примеры наших работ</a></li>
+              <li><a href="#contact">Контакты</a></li>
+              <!-- Контакты в мобильном меню -->
+              <li class="mobile-contacts">
+                <a href="tel:8 (3532) 20-25-20"><i class="fas fa-phone"></i> 8
+                  (3532) 20-25-20</a>
+              </li>
+              <li class="mobile-socials">
+                <a href="https://t.me/+79058833700" target="_blank"><i
+                    class="fab fa-telegram"></i> Telegram</a>
+              </li>
+              <li class="mobile-socials">
+                <a href="https://wa.me/79058833700" target="_blank"><i
+                    class="fab fa-whatsapp"></i> WhatsApp</a>
+              </li>
+              <li><a href="#" class="btn btn-outline" id="callbackBtn">Заказать
+                  звонок</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- /Шапка сайта -->
+
+    <!-- Секция Hero с анимированным заголовком -->
+    <section class="hero" id="home">
+      <!-- SVG фоновые линии -->
+      <svg class="curved-lines-svg" width="100%" height="100%"
+        viewBox="0 0 1000 1000"
+        preserveAspectRatio="xMinYMin slice" style="
+          position: absolute;
+          top: 0;
+          right: 0;
+          pointer-events: none;
+        ">
+        <path d="M600,200 Q850,250 900,500" fill="none"
+          stroke="rgba(255, 213, 45, 0.75)" stroke-width="1"></path>
+        <path d="M620,200 Q870,250 920,500" fill="none"
+          stroke="rgba(255, 213, 45, 0.75)" stroke-width="1"></path>
+        <path d="M640,200 Q890,250 940,500" fill="none"
+          stroke="rgba(255, 213, 45, 0.75)" stroke-width="1"></path>
+        <path d="M660,200 Q910,250 960,500" fill="none"
+          stroke="rgba(255, 213, 45, 0.75)" stroke-width="1"></path>
+        <path d="M680,200 Q930,250 980,500" fill="none"
+          stroke="rgba(255, 213, 45, 0.75)" stroke-width="1"></path>
+        <path d="M700,200 Q950,250 1000,500" fill="none"
+          stroke="rgba(255, 213, 45, 0.75)" stroke-width="1"></path>
+        <path d="M720,200 Q970,250 1020,500" fill="none"
+          stroke="rgba(255, 213, 45, 0.75)" stroke-width="1"></path>
+      </svg>
+
+      <!-- Анимированный заголовок -->
+      <div class="hero-animation-wrapper">
+        <div class="animated-heading-container">
+          <h2 class="animated-heading">
+            Продажи
+            <span class="top-text">Продажи</span>
+            <span class="bottom-text">Продажи</span>
+            <span class="highlight-text">ЭТО МЫ!</span>
+          </h2>
+        </div>
+
+        <!-- Подзаголовок и кнопка -->
+        <div class="hero-content-below">
+          <p>
+            Берём на себя все сложности с организацией эффективного отдела
+            продаж для заводов-производителей с гарантией результата -
+            увеличение Вашей выручки на 15%
+          </p>
+          <a href="#audit" class="btn">Увеличить выручку</a>
+        </div>
+      </div>
+    </section>
+    <!-- /Секция Hero -->
+
+    <!-- Секция с ключевыми показателями -->
+    <section class="numbers">
+      <div class="container">
+        <div class="numbers-grid">
+          <div class="number-item">
+            <h3>200+</h3>
+            <p>млн рублей привлеченных заказов</p>
+          </div>
+          <div class="number-item">
+            <h3>до 30%</h3>
+            <p>экономия ресурсов</p>
+          </div>
+          <div class="number-item">
+            <h3>от 15%</h3>
+            <p>рост выручки</p>
+          </div>
+          <div class="number-item">
+            <h3>20+</h3>
+            <p>отделов продаж</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Секция с показателями -->
+
+    <!-- Секция услуг -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Экспертность компании</h2>
+          <p>
+            Наша команда специализируется исключительно на выстраивании
+            эффективных отделов продаж для наших заказчиков. От Вас нужен лишь
+            один ответственный человек, задача которого - принимать готовые
+            заказы от нашей команды.
+          </p>
+        </div>
+        <!-- SVG для секции "Services" (услуги) -->
+        <svg class="section-svg services-svg" width="100%" height="100%"
+          viewBox="0 0 1000 1000"
+          preserveAspectRatio="xMinYMin slice">
+          <!-- Волнистые линии -->
+          <path
+            d="M-100,300 Q150,200 400,250 Q650,300 900,250 Q1150,200 1400,300"
+            fill="none"
+            stroke="rgba(255, 213, 45, 0.3)" stroke-width="2.5"></path>
+          <path
+            d="M-100,350 Q150,250 400,300 Q650,350 900,300 Q1150,250 1400,350"
+            fill="none"
+            stroke="rgba(255, 213, 45, 0.4)" stroke-width="3"></path>
+          <path
+            d="M-100,400 Q150,300 400,350 Q650,400 900,350 Q1150,300 1400,400"
+            fill="none"
+            stroke="rgba(255, 213, 45, 0.5)" stroke-width="3.5"></path>
+        </svg>
+        <!-- Сетка услуг -->
+        <div class="services-grid">
+          <!-- Услуга 1 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <h3>Отдел продаж на аутсорсе</h3>
+            <p>
+              Мы готовы взять на себя все заботы связанные с продажами вашей
+              продукции "под ключ":
+              <br />-Анализ рынка <br />-"Упаковка" отдела продаж
+              <br />-Масштабирование продаж
+            </p>
+            <a href="#" class="btn btn-outline service-details-btn"
+              data-modal="outsourceModal">Подробнее</a>
+          </div>
+
+          <!-- Услуга 2 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Аудит в отдел продаж кризис-менеджером</h3>
+            <p>
+              Проверьте, как работают Ваши бизнес-процессы, справляются ли
+              менеджеры со своими обязанностями и насколько эффективно построено
+              управление отделом?
+            </p>
+            <a href="#" class="btn btn-outline service-details-btn"
+              data-modal="auditServiceModal">Подробнее</a>
+          </div>
+
+          <!-- Услуга 3 (Объединенная) -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Отдел продаж "с нуля"</h3>
+            <p>
+              Мы берём на себя все заботы связанные с продажами: от найма
+              персонала до разработки эффективной системы
+              масштабирования. Подготовим эффективный отдел продаж внутри Вашей
+              компании, включая современную упаковку
+              продукта и маркетинговые материалы.
+            </p>
+            <a href="#" class="btn btn-outline service-details-btn"
+              data-modal="combinedServiceModal">Подробнее</a>
+          </div>
+        </div>
+
+        <!-- Дополнительная информация -->
+        <div class="section-title">
+          <p>
+            <br />Мы продолжаем работать с Вашей компанией до
+            достижения гарантированных результатов. В итоге Вы получаете
+            эффективное увеличение выручки от 15%!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- /Секция услуг -->
+
+    <!-- Секция проблем отдела продаж -->
+    <section class="problems" id="problems">
+      <div class="container">
+        <div class="section-title">
+          <h2>Если Вам это знакомо - пора обратиться к специалистам</h2>
+        </div>
+        <!-- Сетка проблем -->
+        <div class="problems-grid">
+          <!-- Проблема 1 -->
+          <div class="problem-card">
+            <div class="problem-number">1</div>
+            <div class="problem-content">
+              <h3>Нет продаж</h3>
+              <p>
+                Вы понимаете, что не занимаете даже 3-4 процентов своего рынка,
+                который измеряется сотнями миллионов.
+              </p>
+            </div>
+          </div>
+
+          <!-- Проблема 2 -->
+          <div class="problem-card">
+            <div class="problem-number">2</div>
+            <div class="problem-content">
+              <h3>Нет системы</h3>
+              <p>
+                Для эффективной работы отделов продаж нужна система, где
+                подробно прописаны полномочия и обязанности каждого сотрудника.
+                Именно благодаря системе получится выйти на стабильную выручку
+                компании.
+              </p>
+            </div>
+          </div>
+
+          <!-- Проблема 3 -->
+          <div class="problem-card">
+            <div class="problem-number">3</div>
+            <div class="problem-content">
+              <h3>Сотрудники постоянно спорят с руководителем</h3>
+              <p>
+                Дружба руководителя и сотрудников - не всегда хорошо. Чаще всего
+                эта проблема возникает из-за недостатка или избытка информации у
+                сотрудников.
+              </p>
+            </div>
+          </div>
+
+          <!-- Проблема 4 -->
+          <div class="problem-card">
+            <div class="problem-number">4</div>
+            <div class="problem-content">
+              <h3>Слив бюджета в рекламу</h3>
+              <p>
+                Далеко не все собственники бизнеса отслеживают конверсию продаж.
+                Часто создав крутой продукт, отдав кучу денег в рекламу
+                закрывается всего 3-5% от поступающих заявок.
+              </p>
+            </div>
+          </div>
+
+          <!-- Проблема 5 -->
+          <div class="problem-card">
+            <div class="problem-number">5</div>
+            <div class="problem-content">
+              <h3>Менеджеры занимаются всем, кроме продаж</h3>
+              <p>
+                Заполнять договора, выставлять счета, контролировать наличие
+                товара, и даже договариваться с поставщиками. Клиенты получают
+                меньше внимания: отвечать, вникать, дожимать некогда.
+              </p>
+            </div>
+          </div>
+
+          <!-- Проблема 6 -->
+          <div class="problem-card">
+            <div class="problem-number">6</div>
+            <div class="problem-content">
+              <h3>Менеджеры консультируют, а не продают</h3>
+              <p>
+                Частое явление, когда менеджеры работают на входящих заявках -
+                возникает "эффект регистратуры", ну купит, значит купит, нет -
+                другой позвонит.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- CTA кнопка -->
+      </div>
+    </section>
+    <!-- /Секция проблем -->
+
+    <!-- Секция преимуществ -->
+    <section class="benefits">
+      <div class="container">
+        <div class="section-title">
+          <h2>С нами выгодно</h2>
+          <p>Почему клиенты выбирают именно нас</p>
+        </div>
+        <!-- SVG для секции "Benefits" (преимущества) -->
+        <svg class="section-svg benefits-svg" width="100%" height="100%"
+          viewBox="0 0 1000 1000"
+          preserveAspectRatio="xMidYMid slice">
+          <!-- Круги разного размера и прозрачности -->
+          <circle cx="100" cy="100" r="80" fill="none"
+            stroke="rgba(255, 213, 45, 0.15)" stroke-width="2"></circle>
+          <circle cx="100" cy="100" r="40" fill="none"
+            stroke="rgba(255, 213, 45, 0.3)" stroke-width="2"></circle>
+
+          <circle cx="900" cy="200" r="120" fill="none"
+            stroke="rgba(255, 213, 45, 0.15)" stroke-width="2"></circle>
+          <circle cx="900" cy="200" r="80" fill="none"
+            stroke="rgba(255, 213, 45, 0.3)" stroke-width="2"></circle>
+          <circle cx="900" cy="200" r="40" fill="none"
+            stroke="rgba(255, 213, 45, 0.45)" stroke-width="2"></circle>
+
+          <circle cx="200" cy="700" r="100" fill="none"
+            stroke="rgba(255, 213, 45, 0.15)" stroke-width="2"></circle>
+          <circle cx="200" cy="700" r="60" fill="none"
+            stroke="rgba(255, 213, 45, 0.3)" stroke-width="2"></circle>
+          <circle cx="200" cy="700" r="20" fill="none"
+            stroke="rgba(255, 213, 45, 0.45)" stroke-width="2"></circle>
+
+          <circle cx="800" cy="800" r="60" fill="none"
+            stroke="rgba(255, 213, 45, 0.15)" stroke-width="2"></circle>
+          <circle cx="800" cy="800" r="30" fill="none"
+            stroke="rgba(255, 213, 45, 0.3)" stroke-width="2"></circle>
+        </svg>
+        <!-- Сетка преимуществ -->
+        <div class="benefits-grid">
+          <!-- Преимущество 1 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h3>Быстрые результаты</h3>
+              <p>Первые результаты видны уже через 2-3 недели</p>
+            </div>
+          </div>
+
+          <!-- Преимущество 2 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-up-long"></i>
+            </div>
+            <div>
+              <h3>Рост выручки</h3>
+              <p>
+                Мы можем гарантировать увеличение выручки Вашей компании на 15%
+              </p>
+            </div>
+          </div>
+
+          <!-- Преимущество 3 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-down-long"></i>
+            </div>
+            <div>
+              <h3>Экономия ресурсов компании</h3>
+              <p>Наши заказчики экономят от 20% ресурсов на отдел продаж</p>
+            </div>
+          </div>
+
+          <!-- Преимущество 4 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <div>
+              <h3>Понимаем покупателя:</h3>
+              <p>
+                Наш Call-центр периодически проводит сбор обратной связи от
+                действующих и отказавшихся клиентов.
+              </p>
+            </div>
+          </div>
+
+          <!-- Преимущество 5 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div>
+              <h3>Отдел контроля качества</h3>
+              <p>
+                Каждый наш сотрудник проверяется Отделом Контроля Качества на
+                предмет правильности выполнения должностных обязанностей.
+              </p>
+            </div>
+          </div>
+
+          <!-- Преимущество 6 -->
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div>
+              <h3>Опытная команда</h3>
+              <p>
+                Мы провели исследование - сотрудник начинает эффективно
+                выполнять свои обязанности спустя 2 года стажа. Средний стаж
+                сотрудников наших сотрудников - 6 лет.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Секция преимуществ -->
+
+    <!-- Секция кейсов и отзывов с вкладками -->
+    <section class="cases" id="cases">
+      <div class="container">
+        <div class="section-title">
+          <h2>Примеры наших работ</h2>
+          <p>Реальные результаты наших клиентов</p>
+        </div>
+
+        <!-- Навигация по вкладкам -->
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="cases">
+            Примеры наших работ
+          </button>
+          <button class="tab-btn" data-tab="testimonials">
+            Рекомендательные письма
+          </button>
+        </div>
+
+        <!-- Содержимое вкладки кейсов -->
+        <div class="tab-content active" id="cases-content">
+          <div class="cases-grid">
+            <!-- Кейс 1 - updated version -->
+            <div class="case-card">
+              <div class="case-content">
+                <h3>
+                  Рекламная Компания AKS, СПБ. <br />Направление: B2B-сегмент.
+                </h3>
+                <p>
+                  Закрыта первая сделка на
+                  300 000, наработано потенциала на 1 210 000 рублей.
+                </p>
+                <a href="#" class="btn btn-outline service-details-btn"
+                  data-modal="case1Modal">Подробнее</a>
+              </div>
+            </div>
+
+            <!-- Кейс 2 - updated version -->
+            <div class="case-card">
+              <div class="case-content">
+                <h3>Проектные продажи <br />Направление: B2B-сегмент</h3>
+                <p>
+                  За 45 дней привлечено новых заказов на общую
+                  сумму 184 020 815 рублей. Выстроены
+                  партнёрские отношения...
+                </p>
+                <a href="#" class="btn btn-outline service-details-btn"
+                  data-modal="case2Modal">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Содержимое вкладки отзывов -->
+        <!-- Содержимое вкладки отзывов с реальными рекомендательными письмами -->
+        <div class="tab-content" id="testimonials-content">
+          <div class="testimonials-grid">
+            <!-- Рекомендательное письмо 1 - ОренНедвижимость -->
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-company">ОренНедвижимость</div>
+                <div class="testimonial-logo">
+                  <i class="fas fa-building"></i>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <img src="rekpismo1.jpg"
+                  alt="Рекомендательное письмо от ОренНедвижимость"
+                  style="width: 100%; border-radius: 4px;">
+                <div class="testimonial-author">
+                  <p>Сорокин А.В.</p>
+                  <span>Директор</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Рекомендательное письмо 2 - AKS 
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-company">AKS Advertising Agency</div>
+                <div class="testimonial-logo">
+                  <i class="fas fa-ad"></i>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <img src="rekpismo2.png" alt="Рекомендательное письмо от AKS"
+                  style="width: 100%; border-radius: 4px;">
+                <div class="testimonial-author">
+                  <p>Ашанин А.</p>
+                  <span>Ген. директор</span>
+                </div>
+              </div>
+            </div>
+-->
+            <!-- Рекомендательное письмо 3 - Интер -->
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-company">Интер</div>
+                <div class="testimonial-logo">
+                  <i class="fas fa-ad"></i>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <img src="rekpismo3.jpg" alt="Рекомендательное письмо от Интер"
+                  style="width: 100%; border-radius: 4px;">
+                <div class="testimonial-author">
+                  <p>Десяткина С.А.</p>
+                  <span>Директор</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Рекомендательное письмо 4 - ЭнергоВектор -->
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="testimonial-company">ЭнергоВектор</div>
+                <div class="testimonial-logo">
+                  <i class="fas fa-ad"></i>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <img src="rekpismo4.jpg"
+                  alt="Рекомендательное письмо от ЭнергоВектор"
+                  style="width: 100%; border-radius: 4px;">
+                <div class="testimonial-author">
+                  <p>Агошков В.Г.</p>
+                  <span>Ген. директор</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Секция кейсов и отзывов -->
+
+        <!-- Секция контактов -->
+        <section class="contact" id="contact">
+          <div class="container">
+            <div class="section-title">
+              <h2>Контакты</h2>
+              <p>Свяжитесь с нами для получения индивидуального предложения</p>
+            </div>
+            <!-- SVG для секции "Contact" (контакты) -->
+            <svg class="section-svg contact-svg" width="100%" height="100%"
+              viewBox="0 0 1000 1000"
+              preserveAspectRatio="xMaxYMax slice">
+              <!-- Перекрывающиеся круги в стиле диаграммы Венна -->
+              <circle cx="750" cy="750" r="180"
+                fill="rgba(255, 213, 45, 0.05)"></circle>
+              <circle cx="900" cy="750" r="180"
+                fill="rgba(255, 213, 45, 0.05)"></circle>
+              <circle cx="825" cy="600" r="180"
+                fill="rgba(255, 213, 45, 0.05)"></circle>
+
+              <!-- Соединительные линии -->
+              <path d="M150,850 C350,750 650,850 850,650" fill="none"
+                stroke="rgba(255, 213, 45, 0.3)" stroke-width="2.5"
+                stroke-dasharray="10,10"></path>
+              <path d="M150,950 C350,850 650,950 850,750" fill="none"
+                stroke="rgba(255, 213, 45, 0.3)" stroke-width="2.5"
+                stroke-dasharray="10,10"></path>
+            </svg>
+            <div class="contact-content">
+              <!-- Контактная информация -->
+              <div class="contact-info">
+                <p>
+                  <i class="fas fa-message"></i> Напишите нам в Telegram <a
+                    href="https://t.me/+79058833700" target="_blank"
+                    title="Написать в Telegram"><i
+                      class="fab fa-telegram"></i></a> и Whatsapp
+                  <a href="https://wa.me/79058833700" target="_blank"
+                    title="Написать в WhatsApp"><i
+                      class="fab fa-whatsapp"></i></a>
+                </p>
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> г. Оренбург, Шарлыкское
+                  шоссе 1к1 офис 110.
+                </p>
+                <p><i class="fas fa-phone"></i> +7 (3532) 20-25-20</p>
+                <p><i class="fas fa-envelope"></i> op@dk-p.ru</p>
+                <p><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /Секция контактов -->
+
+        <!-- Модальные окна -->
+        <!-- Модальное окно для услуги "Отдел продаж на аутсорсе" -->
+        <div class="modal" id="outsourceModal">
+          <div class="modal-content service-modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Отдел продаж на аутсорсе</h2>
+            <div class="service-modal-body">
+              <p>Мы готовы взять на себя все заботы связанные с продажами вашей
+                продукции:</p>
+
+              <h3>Анализ рынка:</h3>
+              <ul>
+                <li>Анализ целевой аудитории, выявление ключевых клиентов и
+                  точек масштабирования компании-заказчика;</li>
+                <li>Опрос действующих и отказавшихся клиентов;</li>
+                <li>Составление портрета клиента;</li>
+                <li>Разработка ключевых ценностей компании;</li>
+                <li>Разработка стратегии захвата рынка;</li>
+                <li>Анализ повторных продаж;</li>
+                <li>Разработка модели продаж;</li>
+              </ul>
+
+              <h3>"Упаковка" отдела продаж:</h3>
+              <ul>
+                <li>Сбор и упаковка "успешных кейсов компании" и
+                  рекомендаций;</li>
+                <li>Разработка эффективной воронки продаж, квалификации,
+                  чек-листов, тестирование, отслеживание конверсий по
+                  ключевым метрикам;</li>
+                <li>Составление скриптов и стандартов компании;</li>
+                <li>Разработка эксклюзивных предложений;</li>
+                <li>Подключение CRM-системы, настройка и адаптация под
+                  клиента;</li>
+                <li>Подключение телефонии;</li>
+                <li>Разработка рекламных материалов ТОПовыми дизайнерами и
+                  маркетологами;</li>
+                <li>Разработка системы мотивации для сотрудников;</li>
+                <li>Создание академии для стажёров;</li>
+                <li>Поиск и найм менеджеров происходит лучшими
+                  HR-специалистами;</li>
+                <li>Обучение и адаптация каждого сотрудника происходит совместно
+                  с опытным руководителями;</li>
+                <li>Доработка системы продаж для увеличения показателей
+                  конверсии;</li>
+                <li>Найм сотрудников-усилителей, при необходимости;</li>
+              </ul>
+
+              <h3>Масштабирование:</h3>
+              <ul>
+                <li>Создание и обучение отдела контроля качества;</li>
+                <li>Настройка отслеживания повторных продаж, внедрение анализа
+                  контроля клиента;</li>
+                <li>Кратное увеличение выручки компании с помощью нашей системы
+                  масштабирования</li>
+              </ul>
+              <div class="service-modal-cta">
+                <a href="#audit" class="btn">Получить консультацию</a>
+              </div>
+              <div class="service-modal-cta">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Модальное окно для услуги "Аудит в отдел продаж кризис-менеджером" -->
+        <div class="modal" id="auditServiceModal">
+          <div class="modal-content service-modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Аудит в отдел продаж кризис-менеджером</h2>
+            <div class="service-modal-body">
+              <p>У нас Вы можете заказать Аудит в Отдел Продаж
+                кризис-менеджером.</p>
+              <p>Аудит в Отдел Продаж - это процедура, которая помогает
+                собственнику бизнеса проверить, как работают
+                бизнес-процессы, справляются ли менеджеры со своими
+                обязанностями и насколько эффективно построено управление
+                отделом. Аудит проводят, чтобы разработать план развития отдела
+                продаж и увеличить выручку.</p>
+
+              <h3>Что входит в аудит отдела продаж?</h3>
+
+              <h4>Этап 1: Интервью с собственником.</h4>
+              <ul>
+                <li>Выявление потребностей собственника бизнеса;</li>
+                <li>Сбор начальной информации о работе компании;</li>
+                <li>Сбор статистики работы компании(маржинальность,
+                  преимущества, планы развития);</li>
+                <li>Постановка задач от заказчика исполнителю.</li>
+              </ul>
+
+              <h4>Этап 2: Изучение продукта</h4>
+              <ul>
+                <li>Изучаем размер рынка заказчика;</li>
+                <li>Анализируем долю компании заказчика на рынке;</li>
+                <li>Изучаем преимущества товара/продукта;</li>
+                <li>Изучаем конкурентов, их преимущества и недостатки</li>
+              </ul>
+
+              <h4>Этап 3: Анализ работы отдела продаж</h4>
+              <ul>
+                <li>Анализ воронки продаж;</li>
+                <li>Прослушка звонков сотрудников;</li>
+                <li>Интервью с РОПом;</li>
+                <li>Интервью с менеджерами;</li>
+                <li>Сбор обратной связи от клиентов компании заказчика;</li>
+                <li>Анализ эффективности CRM при наличии;</li>
+                <li>Контрольная закупка;</li>
+                <li>Анализ и выявление точек роста компании</li>
+              </ul>
+
+              <h4>Этап 4: Разработка стратегии для увеличения выручки
+                компании</h4>
+              <ul>
+                <li>Отчёт по полученным данным перед заказчиком;</li>
+                <li>Презентация и защита стратегий развития компании
+                  заказчика;</li>
+              </ul>
+
+              <div class="service-modal-cta">
+                <a href="#audit" class="btn">Получить консультацию</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно для объединенной услуги "Отдел продаж под ключ" -->
+      <div class="modal" id="combinedServiceModal">
+        <div class="modal-content service-modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Подготовим эффективный отдел продаж внутри Вашей компании
+            "под ключ"</h2>
+          <div class="service-modal-body">
+            <p>Мы берём на себя все заботы связанные с продажами:</p>
+            <ul>
+              <li>Поиск и найм менеджеров происходит лучшими
+                HR-специалистами;</li>
+              <li>Составление академии стажёра, стажёр до начала работы уже
+                знает свои обязанности, ключевые метрики и
+                полномочия;</li>
+              <li>Разработка системы мотивации для сотрудников;</li>
+              <li>Обучение и адаптация каждого сотрудника происходит совместно с
+                опытным Руководителями;</li>
+              <li>Сопровождение отдела продаж на протяжении всей
+                жизнедеятельности компании, при необходимости</li>
+              <li>Сбор и упаковка "успешных кейсов компании" и
+                рекомендаций;</li>
+              <li>Разработка эффективной воронки продаж, чек-листов,
+                тестирование, отслеживание конверсий по ключевым
+                метрикам;</li>
+              <li>Составление скриптов и стандартов компании;</li>
+              <li>Разработка эксклюзивных предложений;</li>
+              <li>Подключение CRM-системы, настройка и адаптация под
+                клиента;</li>
+              <li>Подключение телефонии;</li>
+              <li>Рекламные материалы составляются ТОПовыми дизайнерами и
+                маркетологами, подбираются для каждой ниши
+                отдельно под каждую целевую аудиторию;</li>
+              <li>Рекомендация сотрудников-усилителей, при необходимости;</li>
+              <li>Настройка отслеживания повторных продаж, внедрение анализа
+                потери клиентов;</li>
+              <li>Подборка эффективных способов привлечения целевых
+                клиентов;</li>
+              <li>Разработка современного сайта компании;</li>
+            </ul>
+            <div class="service-modal-cta">
+              <a href="#audit" class="btn">Получить консультацию</a>
+            </div>
+            <div class="service-modal-cta">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно для Кейса 1 -->
+      <div class="modal" id="case1Modal">
+        <div class="modal-content service-modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Рекламная Компания AKS, СПБ.</h2>
+          <div class="service-modal-body">
+            <h3>Направление: B2B-сегмент</h3>
+            <p>
+              <strong>Задачи для нашей команды:</strong> Аудит отдела продаж - продукт не
+              продаётся. Наш путь: Анализ навыков сотрудников, анализ
+              целевой аудитории, анализ знаний о продукте. Замена одного
+              менеджера, обучение всего отдела продаж. Команда:
+              <br>-кризис-менеджер 
+              <br>-дизайнер заказчика 
+              <br>-3 менеджера под
+              руководством РОПа. 
+              <br><strong>Результаты:</strong> Всего за 7 дней достигнуты
+              огромные результаты - полностью изменено представление
+              руководства компании и команды о продукте компании, выбран
+              один основной продукт для захвата рынка.
+            </p>
+            <div class="case-result">
+              <p>
+                <i class="fas fa-chart-line"></i> Закрыта первая сделка на
+                300 000, наработано потенциала на 1 210 000 рублей. На
+                текущий момент компания "AKS" - входит в "ГК "ДК-П".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно для Кейса 2 -->
+      <div class="modal" id="case2Modal">
+        <div class="modal-content service-modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Проектные продажи</h2>
+          <div class="service-modal-body">
+            <h3>Направление: B2B-сегмент</h3>
+            <p>
+              <strong>Задача для нашей команды:</strong> За 12 месяцев компания заказчика
+              взяла работы на 55 млн. руб. Есть опыт построения собственного
+              отдела продаж. Не устраивает результат. На CRM-систему
+              потрачено свыше 500 тысяч рублей. Слабая презентация продукта,
+              нет понимания где брать заказчиков. Отсутствие сайта. Сложный
+              продукт.
+            </p>
+            <p>
+              <strong>Наш путь:</strong><br>
+              Первые 30 дней изучение продукта составление, анализ рынка,
+              экскурсия на производственную площадку, подготовка фото-видео
+              материалов. Пять дней составление продающей презентации
+              продукта компании-заказчика. Дополнительно выполнено посещение
+              выставок АГРОПРОДМАШ 2024, DAIRYTECH 2025, Agros Expo 2025. 20
+              дней обучение менеджеров и тестовые звонки потенциальным
+              заказчикам. 10 дней упаковка отдела продаж.
+            </p>
+            <p>
+              <strong>Команда</strong>:
+              <br>-2 менеджера под руководством 1 РОПа; <br>-маркетолог
+              <br>-дизайнер
+            </p>
+            <p>
+              <strong>Результаты:</strong>
+              <br>Январь 2025 - найдено работы на общую сумму 93 443 750
+              рублей. 01.02.2025-15.02.2025 - привлечено новых заказов на
+              общую сумму 90 577 815 рублей. <br>Выстроены партнёрские
+              отношения: <br>- Завод Технониколь, г. Челябинск; <br>- АО
+              "Прогресс" ФрутоНяня. г Липецк; <br>- Святой Источник, г.
+              Лобня; <br>- Akzepta Group(Германия) и много других.
+            </p>
+            <div class="case-result">
+              <p>
+                <i class="fas fa-chart-line"></i> Результат: привлечено
+                заказов на сумму более 184 млн рублей
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /Модальные окна -->
+
+      <!-- Подключение скриптов -->
+      <script src="script.js"></script>
+    </body>
+
+  </html>

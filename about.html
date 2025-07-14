@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - ГК "ДК-П" - Продажи - это мы!</title>
+    <link rel="stylesheet" href="styles-final.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <!-- Логотип -->
+                <div class="logo">
+                    <img src="logo.png" alt="ГК ДК-П" class="logo-image" width="30" height="30">
+                    ГК "<span style="color: var(--yellow)">ДК-П</span>"
+                </div>
+                
+                <!-- Правый блок с контактами и меню -->
+                <div class="header-right">
+                    <!-- Блок контактов в шапку -->
+                    <div class="header-contacts">
+                        <a href="tel:8 (3532) 20-25-20" class="header-phone"><i class="fas fa-phone"></i> 8 (3532) 20-25-20</a>
+                        <div class="header-socials">
+                            <a href="https://t.me/dkpgroup" target="_blank" title="Написать в Telegram"><i class="fab fa-telegram"></i></a>
+                            <a href="https://wa.me/89058833700" target="_blank" title="Написать в WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Кнопка мобильного меню -->
+                    <div class="mobile-menu" id="menuBtn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                
+                <!-- Мобильная навигация -->
+                <nav class="mobile-nav">
+                    <div class="close-nav">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul>
+                        <li><a href="index.html#home">Главная</a></li>
+                        <li><a href="about.html" class="active">О нас</a></li>
+                        <li><a href="index.html#problems">Проблематика</a></li>
+                        <li><a href="index.html#services">Услуги</a></li>
+                        <li><a href="index.html#cases">Примеры наших работ</a></li>
+                        <li><a href="index.html#contact">Контакты</a></li>
+                        <!-- Контакты в мобильном меню -->
+                        <li class="mobile-contacts">
+                            <a href="tel:8 (3532) 20-25-20"><i class="fas fa-phone"></i> 8 (3532) 20-25-20</a>
+                        </li>
+                        <li class="mobile-socials">
+                            <a href="https://t.me/dkpgroup" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+                        </li>
+                        <li class="mobile-socials">
+                            <a href="https://wa.me/89058833700" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </li>
+                        <li><a href="#" class="btn btn-outline" id="callbackBtn">Заказать звонок</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /Шапка сайта -->
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li>О нас</li>
+            </ul>
+        </div>
+    </section>
+    <!-- /Хлебные крошки -->
+
+    <!-- Основное содержимое страницы "О нас" -->
+    <section class="about-page">
+
+        <!-- SVG фоновые линии для страницы "О нас" -->
+<svg class="section-svg about-page-svg" width="100%" height="100%" 
+viewBox="0 0 1000 1000" preserveAspectRatio="xMinYMin slice" 
+style="position: absolute; top: 0; right: 0; pointer-events: none; z-index: 0;">
+
+<!-- Дополнительные волнистые линии внизу, похожие на "services-svg" -->
+<path d="M-100,700 Q150,600 400,650 Q650,700 900,650 Q1150,600 1400,700" 
+     fill="none" stroke="rgba(255, 213, 45, 0.3)" stroke-width="2.5"></path>
+<path d="M-100,750 Q150,650 400,700 Q650,750 900,700 Q1150,650 1400,750" 
+     fill="none" stroke="rgba(255, 213, 45, 0.4)" stroke-width="3"></path>
+<path d="M-100,800 Q150,700 400,750 Q650,800 900,750 Q1150,700 1400,800" 
+     fill="none" stroke="rgba(255, 213, 45, 0.5)" stroke-width="3.5"></path>
+
+<!-- Круги разного размера и прозрачности (похожие на benefits-svg) -->
+<circle cx="100" cy="300" r="80" fill="none" 
+       stroke="rgba(255, 213, 45, 0.15)" stroke-width="2"></circle>
+<circle cx="100" cy="300" r="40" fill="none" 
+       stroke="rgba(255, 213, 45, 0.3)" stroke-width="2"></circle>
+
+<circle cx="900" cy="400" r="120" fill="none" 
+       stroke="rgba(255, 213, 45, 0.15)" stroke-width="2"></circle>
+<circle cx="900" cy="400" r="80" fill="none" 
+       stroke="rgba(255, 213, 45, 0.3)" stroke-width="2"></circle>
+<circle cx="900" cy="400" r="40" fill="none" 
+       stroke="rgba(255, 213, 45, 0.45)" stroke-width="2"></circle>
+</svg>
+        <div class="container">
+            <div class="section-title">
+                <h1>О нас</h1>
+                <p>Кто мы и как работаем</p>
+            </div>
+            
+            <div class="about-page-content">
+                <!-- Блок с логотипом -->
+                <div class="about-page-image">
+                    <img src="logo.png" alt="Логотип ГК ДК-П" class="about-logo">
+                </div>
+                
+                <!-- Текстовый блок -->
+                <div class="about-page-text">
+                    <h2>Группа компаний "ДК-П"</h2>
+                    
+                    <p>Мы – эксперты в области построения и оптимизации системы продаж.</p>
+                    
+                    <p>Наша миссия – совершить продажи для наших клиентов на сумму свыше 1 000 000 000 рублей путём создания от 500 рабочих мест до 2030 года, внедрения эффективных стратегий и инструментов продаж.</p>
+                    
+                    <p>С 2021 года мы успешно работаем с собственниками предприятий.</p>
+                    
+                    <!-- Ценности компании -->
+                    <h3>Наши ценности</h3>
+                    <p class="values-list">
+                        <li><b>Экспертность</b> – Наша команда специализируется исключительно на выстраивании эффективных отделов продаж для наших заказчиков. Средний опыт продаж сотрудников 6 лет.</li>
+                        <li><b>Гарантия результата</b> – Оплата только за результат - фиксированный процент с суммы каждой продажи нашей команды.
+                            Наши клиенты всегда понимают какое вознаграждение и за что нам полагается.
+                            Наша команда продолжает работать с Вашей компанией до достижения гарантированных результатов. 
+                            В итоге Вы получаете эффективное увеличение выручки от 15%!</li>
+                    </p>
+
+                    <!-- Факты о компании -->
+                    <h3>Несколько фактов о нас:</h3>
+                    <ul class="about-facts">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Мы приоритетно поддерживаем импортозамещающие предприятия.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Мы действительно гарантируем результат - мы берём в работу 2-4 предприятия в работу за квартал, именно это позволяет нам гарантировать результат.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>В нашей команде действительно ТОПовые специалисты с реальным большим опытом работы.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Каждый наш клиент получает действительно индивидуальный план развития по захвату рынка.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-times-circle"></i>
+                            <span>Мы НЕ занимаемся продажей "воздуха". Нам крайне важен имидж нашей компании и наших партнёров.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-times-circle"></i>
+                            <span>Мы НЕ занимаемся проектными продажами.</span>
+                        </li>
+                    </ul>
+                    
+                    <!-- CTA блок -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Основное содержимое -->
+
+
+    <!-- Подключение скриптов -->
+    <script src="script.js"></script>
+</body>
+</html>

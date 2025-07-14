@@ -1,0 +1,159 @@
+/* ==========================================================================
+   Анимированный заголовок - основные стили
+   ========================================================================== */
+   .hero-animation-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    width: calc(100% - 100px);
+}
+
+.hero-content-below {
+    margin-top: 30px;
+}
+
+/* Контейнер анимации */
+.animated-heading-container {
+    position: relative;
+    height: 150px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* Базовый стиль заголовка */
+.animated-heading {
+    margin: 0; 
+    padding: 0;
+    position: relative;
+    font-size: 6.5rem;
+    color: transparent; /* Сам текст прозрачный, видны будут только его части */
+    text-transform: uppercase;
+    font-weight: 700;
+    width: max-content;
+    display: inline-block;
+}
+
+/* ==========================================================================
+   Анимируемые части заголовка
+   ========================================================================== */
+/* Верхняя часть текста */
+.animated-heading .top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white);
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); /* Обрезаем нижнюю половину */
+    overflow: hidden;
+}
+
+.animated-heading:hover .top-text,
+.animated-heading-container:hover .animated-heading .top-text {
+    transform: translateY(-18px); /* Движение вверх при наведении */
+}
+
+/* Нижняя часть текста */
+.animated-heading .bottom-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white);
+    transition: 0.5s;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%); /* Обрезаем верхнюю половину */
+    overflow: hidden;
+}
+
+.animated-heading:hover .bottom-text,
+.animated-heading-container:hover .animated-heading .bottom-text {
+    transform: translateY(18px); /* Движение вниз при наведении */
+}
+
+/* Акцентный текст ("ЭТО МЫ!") с желтым фоном */
+.animated-heading .highlight-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scaleY(0); /* Изначально сжат по вертикали */
+    width: max-content;
+    min-width: 100%; /* По ширине текста "Продажи" */
+    max-width: 100%; /* И не более текста "Продажи" */
+    color: var(--black);
+    background: var(--yellow);
+    font-size: 0.25em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding: 8px 0;
+    transition: 0.5s;
+}
+
+.animated-heading:hover .highlight-text,
+.animated-heading-container:hover .animated-heading .highlight-text {
+    transform: translateY(-50%) scaleY(1); /* Разворачивается при наведении */
+}
+
+/* ==========================================================================
+   Адаптивные стили для анимированного заголовка
+   ========================================================================== */
+@media (max-width: 1200px) {
+    .hero-animation-wrapper {
+        margin-left: 100px;
+        width: calc(100% - 150px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-animation-wrapper {
+        margin-left: 50px;
+        width: calc(100% - 80px);
+    }
+    
+    .animated-heading-container {
+        height: 120px;
+    }
+    
+    .animated-heading {
+        font-size: 3rem;
+    }
+    
+    /* Уменьшаем смещение для меньших экранов */
+    .animated-heading:hover .top-text,
+    .animated-heading-container:hover .animated-heading .top-text {
+        transform: translateY(-10px);
+    }
+    
+    .animated-heading:hover .bottom-text,
+    .animated-heading-container:hover .animated-heading .bottom-text {
+        transform: translateY(10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-animation-wrapper {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+    
+    .animated-heading-container {
+        height: 90px;
+    }
+    
+    .animated-heading {
+        font-size: 2rem;
+    }
+    
+    /* Ещё меньшее смещение для мобильных устройств */
+    .animated-heading:hover .top-text,
+    .animated-heading-container:hover .animated-heading .top-text {
+        transform: translateY(-8px);
+    }
+    
+    .animated-heading:hover .bottom-text,
+    .animated-heading-container:hover .animated-heading .bottom-text {
+        transform: translateY(8px);
+    }
+    
+    .animated-heading .highlight-text {
+        letter-spacing: 0.3em;
+    }
+}
